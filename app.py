@@ -3,6 +3,8 @@ from flask import Flask, render_template, request
 from ptcgo import PTCGOParser
 
 app = Flask(__name__)
+app.use_reloader=False
+app.debug=False
 
 @app.route('/')
 def index():

@@ -1,4 +1,4 @@
-PATH = 'cards/basic_energies/%s.jpg'
+PATH = '/static/images/%s.jpg'
 
 ENERGIES = {
     'Lightning': PATH % 'lightning',
