@@ -9,26 +9,11 @@
     <body>
         <h1>Build yourself a proxy deck!</h1>
 
-        <h2>Theme Deck Proxy Builder</h2>
-        <p>Insert Bulbapedia url for a theme deck (currently supports XY-on
-        theme decks. Does not work with half-decks or battle arenas).</p>
-        <form action='bulbapedia' method="POST">
-            URL: <input type="text" name="bulbaurl" />
-            <input type="submit" name="bulbapedia-form" value="Generate" />
-        </form>
-
-
         <hr />
-        <h2> PTCGO / TCGOne Decklist Proxy Builder </h2>
-        <p>Paste in a Pokemon TCG Online or TCGOne formatted decklist (and
-        choose from dropdown) and click generate</p>
-        <p>Known errors: Radiant Collection cards, Alph Litograph</p>
+        <h2> PTCGO Decklist Proxy Builder </h2>
+        <p>Paste in a Pokemon TCG Online formatted decklist click generate</p>
+        <p>Known errors: Alph Litograph</p>
         <form action='generate' method="POST">
-            <select name="deckformat">
-                <option value="ptcgo">Pokemon TCG Online</option>
-                <option value="tcgone">TCGOne</option>
-            </select>
-            <br />
             <textarea type="text" name="decklist" rows=30
                 cols=75></textarea>
             <br />

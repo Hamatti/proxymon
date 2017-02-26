@@ -13,10 +13,8 @@ def index():
 @app.route('/generate', methods=['POST'])
 def generate_from_decklist():
     decklist = request.form['decklist']
-    decklist_format = request.form['deckformat']
-    if decklist_format == 'ptcgo':
-        parser = PTCGOParser
 
+    parser = PTCGOParser
     p = parser(decklist)
     p.run()
     return p.full_html
