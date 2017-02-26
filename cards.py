@@ -14,7 +14,7 @@ for _, _, files in os.walk('cards'):
             continue
         for card in cards['cards']:
             try:
-                all_cards[card['id']] = card['imageUrlHiRes']
+                all_cards[card['id']] = card['imageUrl']
             except Exception as e:
                 try:
                     all_cards[card['id']] = card['imageUrl']
