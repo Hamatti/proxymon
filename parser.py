@@ -28,6 +28,20 @@ class AbstractParser(object):
             img { height: 316px; margin: 0 1px 1px 0; width: 230px; }
             #back { display: block; font-family: 'Lucida Grande', sans-serif; font-size: 125%; padding: 10px; position: absolute; right: 0; top: 0; }
             @media print { #back { display: none; } }
+            .footer {
+                display: block;
+                position: fixed;
+                width: 100%;
+                text-align: center;
+                height: 50px;
+                line-height: 50px;
+                background: red;
+                color: white;
+                font-weight: 700;
+                font-size: 20px;
+                text-decoration: none;
+                bottom: 0;
+            }
             </style>
             </head>
 
@@ -58,7 +72,9 @@ class AbstractParser(object):
             images_html += self.IMG_TEMPLATE.format(img=card)
         soup = BeautifulSoup(self.HTML_TEMPLATE, 'html.parser')
         body = soup.find('body')
+        footer = '<a class="footer" href="javascript:window.print()">Print deck</a>'
         body.append(BeautifulSoup(images_html, 'html.parser'))
+        body.append(BeautifulSoup(footer, 'html.parser'))
         self.full_html = str(soup)
 
     def run(self):

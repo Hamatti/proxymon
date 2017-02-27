@@ -1,5 +1,5 @@
 import os
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, flash
 from ptcgo import PTCGOParser
 
 app = Flask(__name__)
