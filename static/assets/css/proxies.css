@@ -1,0 +1,68 @@
+#proxies {
+    text-align: left;
+}
+
+.footer {
+    width: 100%;
+    background-color: lightgoldenrodyellow;
+    text-align: center;
+}
+
+.top {
+    margin-top: 40px;
+}
+
+.hero-body {
+    padding-left: 40px;
+    padding-bottom: 10px;
+    padding-right: 40px;
+}
+
+.container {
+    margin-bottom: 50px;
+}
+hr {
+    background-color: #00d1b2;
+    margin-top: 0.3rem;
+}
+.form-group {
+    margin-top: 25px;
+}
+
+.column {
+    margin-top: 25px;
+}
+
+.preview h2 {
+    margin-bottom: 25px;
+    font-weight: 800;
+}
+
+textarea[name="decklist"] {
+    margin: 0px; height: 662px; width: 467px;
+}
+
+.modal-background {
+    background-color: rgba(148, 143, 143, 0.6);
+}
+
+.modal-card {
+    background-color: white;
+}
+
+.modal header {
+    margin: 0;
+}
+
+.modal-card-body {
+    padding: 7px 20px 0px 20px !important;
+}
+
+.modal section {
+    margin-bottom: 0 !important;
+}
+
+.modal footer {
+    margin: 0 !important;
+}
+

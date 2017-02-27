@@ -8,7 +8,15 @@ app.debug=False
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('index2.html')
+
+@app.route('/proxies')
+def proxies():
+    return render_template('proxies.html')
+
+@app.route('/featured/<deckname>/')
+def featured(deckname):
+    return render_template('featured/%s.html' % deckname)
 
 @app.route('/generate', methods=['POST'])
 def generate_from_decklist():

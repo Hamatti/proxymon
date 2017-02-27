@@ -1,0 +1,186 @@
+<!DOCTYPE HTML>
+<!--
+	Dopetrope by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Proxymon - for quick deck testing</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="/static/assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="/static/assets/css/main.css" />
+		<link rel="stylesheet" href="/static/assets/css/proxies.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="/static/assets/css/ie8.css" /><![endif]-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.2/css/bulma.min.css" />
+	</head>
+	<body class="homepage">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header-wrapper">
+					<div id="header">
+					<!-- Banner -->
+							<section id="banner">
+								<header>
+                                <h2><a href="/">Proxymon</a></h2>
+									<p>Proxy builder for Pokemon TCG</p>
+								</header>
+							</section>
+
+						<!-- Intro -->
+							<section id="proxies" class="container">
+								<div class="row">
+									<div class="12u 12u(mobile)">
+                                       <div class="container">
+                                           <p class="lead">
+                                        <a href="/">&lt;&lt; Back home </a><br
+                                        />
+                                       <a id="export-modal"><i class="icon fa-question"></i> How do I export a deck list?</a>
+                                      </p>
+                                        <div class="modal">
+                                        <div class="modal-background"></div>
+                                        <div class="modal-card">
+                                            <header class="modal-card-head">
+                                            <p class="modal-card-title">Exporting decklist from PTCGO</p>
+                                            </header>
+                                            <section class="modal-card-body">
+                                           <p class="modal-card-body">
+                                            <strong>Step #1</strong>
+                                            <p>Open a deck in PTCGO Deck Manager</p>
+                                            <img src="/static/images/deckmanager.png" />
+                                            <hr />
+                                            <strong>Step #2</strong>
+                                            <p>Copy decklist to clipboard</p>
+                                            <img src="/static/images/export.png" />
+                                            </p>
+                                            <hr />
+                                            <strong>Step #3</strong>
+                                            <p>Paste to Proxymon</p>
+                                            <img src="/static/images/paste.png" />
+                                            </p>
+
+                                            </section>
+                                            <footer class="modal-card-foot">
+                                            <a class="modal-close"></a>
+                                            <button class="modal-close-button">Close</button>
+                                            </footer>
+                                        </div>
+                                        </div>
+                                        <div class="columns">
+                                            <div class="column">
+                                                <form action='generate' method="POST">
+                                                    <p class="supported"><strong>Supported sets:</strong> BW-on</p>
+                                                    <div class="form-group">
+                                                        <textarea type="text" name="decklist" rows=30
+                                                            cols=75></textarea>
+                                                    </div>
+                                            </div>
+                                            <div class="column">
+                                                <div class="preview">
+                                                    <h2>This is what a decklist should look like</h2>
+<pre>
+****** Pokémon Trading Card Game Deck List ******
+
+##Pokémon - 13
+
+* 1 Oranguru SUM 113
+* 3 Darkrai-EX BKP 74
+* 4 Dratini SUM 94
+* 3 Dragonair SUM 95
+* 1 Dragonite ROS 51
+* 1 Mew FAC 29
+
+##Trainer Cards - 32
+
+* 1 Fighting Fury Belt BKP 99
+* 2 Ace Trainer AOR 69
+* 4 Trainers' Mail ROS 92
+* 2 Lillie SUM 122
+* 3 Professor's Letter BKT 146
+* 1 Super Rod BKT 149
+* 2 Lysandre AOR 78
+* 3 Professor Sycamore BKP 107
+* 1 Lucky Helmet AOR 77
+* 1 Switch SUM 132
+* 1 Fisherman BKT 136
+* 1 Escape Rope PRC 127
+* 1 Special Charge STS 105
+* 1 VS Seeker ROS 110
+* 3 Ultra Ball SUM 135
+* 1 N FAC 105
+* 2 Float Stone BKT 137
+* 2 Level Ball NXD 89
+
+##Energy - 15
+
+* 4 Double Dragon Energy ROS 97
+* 11 Darkness Energy  7
+
+Total Cards - 60
+
+****** Deck List Generated by the Pokémon TCG Online www.pokemon.com/TCGO ******
+</pre>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                            <br />
+                                            <input type="submit" name="decklist-form" value="Generate" />
+                                        </form>
+                                    </div>
+                    </div>
+
+                            
+                                    </div>
+                                </div>
+
+
+							</section>
+
+					</div>
+				</div>
+
+
+			<!-- Footer -->
+				<div id="footer-wrapper">
+					<section id="footer" class="container">
+						<div class="row">
+							<div class="12u 12u(mobile)">
+								<section>
+                                    <p>
+                                    Proxymon has been heavily inspired by <a href="http://proxycroak.com/" target=_blank>Proxycroak</a>, <a href="https://pkmncards.com" target=_blank>pkmncards</a> and the great <a href="http://pokemontcg.io/" target=_blank>Pokemon TCG API</a>.
+                                    </p>
+                                    <p>This website is not produced, endorsed, supported, or affiliated with Nintendo or The Pokémon Company. I'm just a fan!</p>
+								</section>
+							</div>
+						</div>
+					</section>
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="/static/assets/js/jquery.min.js"></script>
+			<script src="/static/assets/js/jquery.dropotron.min.js"></script>
+			<script src="/static/assets/js/skel.min.js"></script>
+			<script src="/static/assets/js/skel-viewport.min.js"></script>
+			<script src="/static/assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="/static/assets/js/ie/respond.min.js"></script><![endif]-->
+            <script src="/static/assets/js/main.js"></script>
+            <script>
+                $('#export-modal').on('click', function() {
+                    $('.modal').addClass('is-active');
+                });
+                $('.modal-close').on('click', function() {
+                    $('.modal').removeClass('is-active');
+                });
+                $('.modal-close-button').on('click', function() {
+                    $('.modal').removeClass('is-active');
+                });
+
+            </script>
+
+	</body>
+</html>

@@ -27,20 +27,23 @@ class PTCGOParser(AbstractParser):
     # PTCGO specific methods
     def parse_raw_decklist(self):
         for line in self.raw_decklist.split('\n'):
-            line = line.strip()
-            match = PTCGOPattern.SET_CARD_PATTERN.match(line)
-            if match:
-                quantity, set_name, set_nro = match.groups()
-                try:
-                    set_name = PTCGO_SETS[set_name]
-                    self.decklist.append(((set_name, set_nro), int(quantity)))
-                except KeyError:
+            try:
+                line = line.strip()
+                match = PTCGOPattern.SET_CARD_PATTERN.match(line)
+                if match:
+                    quantity, set_name, set_nro = match.groups()
+                    try:
+                        set_name = PTCGO_SETS[set_name]
+                        self.decklist.append(((set_name, set_nro), int(quantity)))
+                    except KeyError:
+                        is_energy = PTCGOPattern.BASIC_ENERGY_PATTERN.match(line)
+                        quantity, energy_name = is_energy.groups()
+                        self.decklist.append(((energy_name, None), int(quantity)))
+                else:
                     is_energy = PTCGOPattern.BASIC_ENERGY_PATTERN.match(line)
-                    quantity, energy_name = is_energy.groups()
-                    self.decklist.append(((energy_name, None), int(quantity)))
-            else:
-                is_energy = PTCGOPattern.BASIC_ENERGY_PATTERN.match(line)
-                if is_energy:
-                    quantity, energy_name = is_energy.groups()
-                    self.decklist.append(((energy_name, None), int(quantity)))
+                    if is_energy:
+                        quantity, energy_name = is_energy.groups()
+                        self.decklist.append(((energy_name, None), int(quantity)))
+            except:
+                print line
 
