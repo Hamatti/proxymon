@@ -25,9 +25,6 @@ class AbstractParser(object):
             <style type="text/css">
             body, html, img, a { border: none; margin: 0; padding: 0; }
             img { height: 309px; margin: 0 1px 1px 0; width: 225px; }
-            img { height: 316px; margin: 0 1px 1px 0; width: 230px; }
-            #back { display: block; font-family: 'Lucida Grande', sans-serif; font-size: 125%; padding: 10px; position: absolute; right: 0; top: 0; }
-            @media print { #back { display: none; } }
             .footer {
                 display: block;
                 position: fixed;
@@ -42,6 +39,9 @@ class AbstractParser(object):
                 text-decoration: none;
                 bottom: 0;
             }
+            img { height: 316px; margin: 0 1px 1px 0; width: 230px; }
+            #back { display: block; font-family: 'Lucida Grande', sans-serif; font-size: 125%; padding: 10px; position: absolute; right: 0; top: 0; }
+            @media print { #back { display: none; } .footer { display: none; }}
             </style>
             </head>
 
