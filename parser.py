@@ -38,6 +38,7 @@ class AbstractParser(object):
                 font-size: 20px;
                 text-decoration: none;
                 bottom: 0;
+                text-transform: uppercase;
             }
             img { height: 316px; margin: 0 1px 1px 0; width: 230px; }
             #back { display: block; font-family: 'Lucida Grande', sans-serif; font-size: 125%; padding: 10px; position: absolute; right: 0; top: 0; }
