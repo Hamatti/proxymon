@@ -10,6 +10,7 @@ class AbstractParser(object):
 
     def __init__(self):
         self.decklist = []
+        self.errors = []
         self.images = []
         self.full_html = ''
         self.api = API()
@@ -42,7 +43,14 @@ class AbstractParser(object):
             }
             img { height: 316px; margin: 0 1px 1px 0; width: 230px; }
             #back { display: block; font-family: 'Lucida Grande', sans-serif; font-size: 125%; padding: 10px; position: absolute; right: 0; top: 0; }
-            @media print { #back { display: none; } .footer { display: none; }}
+            .errors {
+                height: 30px;
+                text-align: center;
+                background-color: orange;
+                color: white;
+                line-height: 30px;
+            }
+            @media print { .errors { display: none; } #back { display: none; } .footer { display: none; }}
             </style>
             </head>
 
@@ -74,6 +82,13 @@ class AbstractParser(object):
         soup = BeautifulSoup(self.HTML_TEMPLATE, 'html.parser')
         body = soup.find('body')
         footer = '<a class="footer" href="javascript:window.print()">Print deck</a>'
+        errors = ''
+        if self.errors:
+            errors = '<div class="errors"><strong>Problems in the following cards, not printed: </strong>'
+            for error in self.errors:
+                errors += error + ','
+            errors += '</div>'
+        body.append(BeautifulSoup(errors, 'html.parser'))
         body.append(BeautifulSoup(images_html, 'html.parser'))
         body.append(BeautifulSoup(footer, 'html.parser'))
         self.full_html = str(soup)

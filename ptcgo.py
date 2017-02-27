@@ -15,6 +15,7 @@ class PTCGOParser(AbstractParser):
         super(PTCGOParser, self).__init__()
         self.raw_decklist = decklist
         self.decklist = []
+        self.errors = []
 
     def run(self):
         self.pre_parse()
@@ -45,5 +46,5 @@ class PTCGOParser(AbstractParser):
                         quantity, energy_name = is_energy.groups()
                         self.decklist.append(((energy_name, None), int(quantity)))
             except:
-                print line
+                self.errors.append(line)
 
