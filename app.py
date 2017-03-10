@@ -1,6 +1,6 @@
 import os
 from flask import Flask, render_template, request, flash
-from ptcgo import PTCGOParser
+from models.ptcgoparser import PTCGOParser
 
 app = Flask(__name__)
 app.use_reloader=False
@@ -8,7 +8,7 @@ app.debug=False
 
 @app.route('/')
 def index():
-    return render_template('index2.html')
+    return render_template('index.html')
 
 @app.route('/proxies')
 def proxies():
@@ -22,8 +22,7 @@ def featured(deckname):
 def generate_from_decklist():
     decklist = request.form['decklist']
 
-    parser = PTCGOParser
-    p = parser(decklist)
+    p = PTCGOParser(decklist)
     p.run()
     return p.full_html
 

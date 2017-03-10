@@ -1,158 +1,202 @@
-<!doctype html>
-
+<!DOCTYPE HTML>
+<!--
+	Dopetrope by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
-    <head>
-        <title>Proxymon - Your #1 Source of Pokemon TCG Proxies</title>
-        <meta charset="utf8" />
-        <meta property="og:title" content="Proxymon - Your #1 Source of Pokemon
-        TCG Proxies" />
-        <meta property="og:description" content="Create printable Pokemon TCG
-        proxy decks" />
+	<head>
+		<title>Proxymon - for quick deck testing</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="/static/assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="/static/assets/css/main.css" />
+        <!--[if lte IE 8]><link rel="stylesheet" href="/static/assets/css/ie8.css" /><![endif]-->
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.2/css/bulma.min.css" />
-        <style>
-            .footer {
-                width: 100%;
-                background-color: lightgoldenrodyellow;
-                text-align: center;
-            }
+        <meta property="og:title" content="Proxymon - Pokemon TCG proxy
+        builder" />
+        <meta property="og:description" content="Proxymon is the easiest and
+        fastest way to build decks for playtesting Pokemon TCG" />
+        <meta property="og:image"
+        content="http://proxymon.herokuapp.com/static/proxymon.png" />
+        <meta property="og:url" content="http://proxymon.herokuapp.com" />
 
-            .top {
-                margin-top: 40px;
-            }
+	</head>
+	<body class="homepage">
+		<div id="page-wrapper">
 
-            .hero-body {
-                padding-left: 40px;
-                padding-bottom: 10px;
-                padding-right: 40px;
-            }
+			<!-- Header -->
+				<div id="header-wrapper">
+					<div id="header">
+					<!-- Banner -->
+							<section id="banner">
+								<header>
+									<h2>Proxymon</h2>
+									<p>Build Pokemon TCG proxy decks fast and
+                                    easy</p>
+								</header>
+							</section>
 
-            .container {
-                margin-bottom: 50px;
-            }
-            hr {
-                background-color: #00d1b2;
-                margin-top: 0.3rem;
-            }
-            .form-group {
-                margin-top: 25px;
-            }
+						<!-- Intro -->
+							<section id="intro" class="container">
+								<div class="row">
+									<div class="4u 12u(mobile)">
+										<section class="first">
+											<i class="icon featured fa-cog"></i>
+											<header>
+												<h2>Create</h2>
+											</header>
+                                            <p>Create your deck in <a href="http://www.pokemon.com/us/pokemon-tcg/play-online/">Pokemon TCG Online</a> and
+                                            export to Proxymon. With just few
+                                            clicks you have one-to-one matching
+                                            copy of your online deck ready to
+                                            whip out in your local playtesting
+                                            group.</p>
+										</section>
+									</div>
+									<div class="4u 12u(mobile)">
+										<section class="middle">
+											<i class="icon featured alt
+                                                fa-play-circle"></i>
+											<header>
+												<h2>Playtest</h2>
+											</header>
+											<p>The path to mastery goes through
+                                            vigorous playtesting. Proxy decks
+                                            makes it fast and easy to iterate
+                                            over multiple decks and
+                                            configurations.</p>
+										</section>
+									</div>
+									<div class="4u 12u(mobile)">
+										<section class="last">
+											<i class="icon featured alt2
+                                                fa-dollar"></i>
+											<header>
+												<h2>Buy</h2>
+											</header>
+											<p>Once you know what works, make
+                                            sure to buy the cards to be ready
+                                            for sanctioned Play!Pokemon
+                                            tournaments.
+                                            <strong>Support your local game stores!</strong></p>
+										</section>
+									</div>
+								</div>
+								<footer>
+									<ul class="actions">
+										<li><a href="/proxies" class="button
+                                            big">Make 'em proxies</a></li>
+										<li><a href="#featured" class="button alt
+                                            big">Featured decks</a></li>
+									</ul>
+								</footer>
+							</section>
 
-            .column {
-                margin-top: 25px;
-            }
+					</div>
+				</div>
 
-            .preview h2 {
-                margin-bottom: 25px;
-                font-weight: 800;
-            }
+			<!-- Main -->
+				<div id="main-wrapper">
+					<div class="container">
+						<div class="row">
+							<div class="12u">
+                                <a name="featured"></a>
+								<!-- Portfolio -->
+                                <section>
+										<header class="major">
+											<h2>Featured Decks</h2>
+										</header>
+										<div class="row">
+											<div class="4u 12u(mobile)">
+												<section class="box">
+													<a href="#" class="image
+                                                        featured"><img
+                                                        src="/static/images/yveltalgarb.png" alt="" /></a>
+													<header>
+														<h3>Michael Pramawat's
+                                                        Yveltal/Garbodor</h3>
+													</header>
+													<p>Michael Pramawat took the European Internationals
+                                                    with a storm with his
+                                                    Yveltal/Garbodor deck. </p>
+													<footer>
+														<a
+                                                            href="/featured/pramawat/"
+                                                            class="button
+                                                            alt">Print
+                                                            Yveltal/Garbodor</a>
+													</footer>
+												</section>
+											</div>
+											<div class="4u 12u(mobile)">
+												<section class="box">
+													<a href="#" class="image featured"><img src="/static/images/maudino.png" alt="" /></a>
+													<header>
+														<h3>Shintaro Ito's Mega Audino-EX</h3>
+													</header>
+													<p>Who would have guessed it? Mega Audino-EX came from nowhere and, piloted by Shintaro Ito, won the World Championship in Masters division.</p>
+													<footer>
+														<a
+                                                            href="/featured/shintaro/" class="button alt">Print Mega-Audino EX deck</a>
+													</footer>
+												</section>
+											</div>
+											<div class="4u 12u(mobile)">
+												<section class="box">
+													<a href="#" class="image featured"><img src="/static/images/yveltaldarkrai.png" alt="" /></a>
+													<header>
+														<h3>Mark Garcia's Yveltal/Darkrai</h3>
+													</header>
+													<p>Mark Garcia won the San Jose Regionals with his expanded Yveltal/Darkrai deck that featured Gallade and Archeops</p>
+													<footer>
+                                                    <a href="/featured/garcia/" class="button alt">Print Yveltal/Darkrai</a>
+													</footer>
+												</section>
+											</div>
+										</div>
+								</section>
+							</div>
+						</div>
+					</div>
+				</div>
 
-            textarea[name="decklist"] {
-                margin: 0px; height: 662px; width: 467px;
-            }
-        </style>
+			<!-- Footer -->
+				<div id="footer-wrapper">
+					<section id="footer" class="container">
+						<div class="row">
+							<div class="12u 12u(mobile)">
+								<section>
+                                    <p>
+                                    Proxymon has been heavily inspired by <a href="http://proxycroak.com/" target=_blank>Proxycroak</a>, <a href="https://pkmncards.com" target=_blank>pkmncards</a> and the great <a href="http://pokemontcg.io/" target=_blank>Pokemon TCG API</a>.
+                                    </p>
+                                    <p>This website is not produced, endorsed, supported, or affiliated with Nintendo or The Pokémon Company. I'm just a fan!</p>
+								</section>
+							</div>
+						</div>
+					</section>
+				</div>
 
-    </head>
+		</div>
 
-    <body>
-<section class="hero is-primary is-fullwidth">
-  <div class="hero-body">
-    <div class="container">
-      <h1 class="title">Proxymon</h1>
-      <h2 class="subtitle">
-        Build and print Pokemon TCG proxy decks - fast and easy
-      </h2>
-    </div>
-  </div>
-</section>
-<hr />
-<div class="container">
-                    <p class="lead">
-                        Creating Pokemon TCG proxies shouldn't be hard nor time consuming. Proxymon
-                        makes it easy for you - just copy and paste your PTCGO
-                        decklists and print away!
-                    </p>
-                    <div class="columns">
-                        <div class="column">
-                            <form action='generate' method="POST">
-                                <p class="supported"><strong>Supported sets:</strong> BW-on</p>
-                                <div class="form-group">
-                                    <textarea type="text" name="decklist" rows=30
-                                        cols=75></textarea>
-                                </div>
-                        </div>
-                        <div class="column">
-                            <div class="preview">
-                                <h2>This is what a decklist should look like</h2>
-                                <pre>
-****** Pokémon Trading Card Game Deck List ******
+		<!-- Scripts -->
+			<script src="/static/assets/js/jquery.min.js"></script>
+			<script src="/static/assets/js/jquery.dropotron.min.js"></script>
+			<script src="/static/assets/js/skel.min.js"></script>
+			<script src="/static/assets/js/skel-viewport.min.js"></script>
+			<script src="/static/assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="/static/assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="/static/assets/js/main.js"></script>
+            <script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new
+                    Date();a=s.createElement(o),
+                      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-##Pokémon - 13
+                          ga('create', 'UA-92697379-1', 'auto');
+                            ga('send', 'pageview');
 
-* 1 Oranguru SUM 113
-* 3 Darkrai-EX BKP 74
-* 4 Dratini SUM 94
-* 3 Dragonair SUM 95
-* 1 Dragonite ROS 51
-* 1 Mew FAC 29
-
-##Trainer Cards - 32
-
-* 1 Fighting Fury Belt BKP 99
-* 2 Ace Trainer AOR 69
-* 4 Trainers' Mail ROS 92
-* 2 Lillie SUM 122
-* 3 Professor's Letter BKT 146
-* 1 Super Rod BKT 149
-* 2 Lysandre AOR 78
-* 3 Professor Sycamore BKP 107
-* 1 Lucky Helmet AOR 77
-* 1 Switch SUM 132
-* 1 Fisherman BKT 136
-* 1 Escape Rope PRC 127
-* 1 Special Charge STS 105
-* 1 VS Seeker ROS 110
-* 3 Ultra Ball SUM 135
-* 1 N FAC 105
-* 2 Float Stone BKT 137
-* 2 Level Ball NXD 89
-
-##Energy - 15
-
-* 4 Double Dragon Energy ROS 97
-* 11 Darkness Energy  7
-
-Total Cards - 60
-
-****** Deck List Generated by the Pokémon TCG Online www.pokemon.com/TCGO ******
-                                </pre>
-
-                            </div>
-                        </div>
-                    </div>
-                        <br />
-                        <input type="submit" name="decklist-form" value="Generate" />
-                    </form>
-                </div>
-</div>
-            <div class="row">
-            <footer class="footer">
-                <p>Proxymon has been heavily inspired by <a href="http://proxycroak.com/" target=_blank>Proxycroak</a>, <a target=_blank href="https://pkmncards.com/">pkmncards</a> and the great <a href="http://pokemontcg.io/" target=_blank>Pokemon TCG API</a>. </p>
-                <p>This website is not produced, endorsed, supported, or affiliated with Nintendo or The Pokémon Company. I'm just a fan!</p>
-            </div>
-        </footer>
-        </div>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-84736145-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
-
-
-    </body>
+                        </script>
+	</body>
 </html>
