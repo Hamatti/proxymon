@@ -3,6 +3,8 @@
 
 Proxymon is a hobby project built to help Pokemon TCG players test out new decks and combinations faster.
 
+Test it out at [https://proxymon.herokuapp.com](https://proxymon.herokuapp.com)
+
 ## Installation
 
 ```
