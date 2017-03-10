@@ -1,12 +1,19 @@
+# Combines sets into one big json file
+
 import json, os
 
-outfile = open('../local-storage/all.json', 'w')
+this_files_dir = os.path.abspath(__file__)
+parent_dir = os.path.abspath(os.path.join(this_files_dir, os.pardir, os.pardir))
+local_storage_dir = os.path.join(parent_dir, 'local-storage')
+
+outfile = open(os.path.join(local_storage_dir, 'all.json'), 'w')
+
 all_cards = {}
-for _, _, files in os.walk('cards'):
+for _, _, files in os.walk(local_storage_dir):
     for f in files:
         if f == 'all.json':
             continue
-        fname = '../local-storage/%s' % f
+        fname = os.path.join(local_storage_dir, f)
         print fname
         data = open(fname).read()
         cards = json.loads(data)
