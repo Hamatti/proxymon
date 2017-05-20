@@ -46,6 +46,7 @@ PTCGO_SETS =  {
     'PR-XY': 'xyp',
     # Sun & Moon Sets
     'SUM': 'sm1',
+    'GRI': 'sm2',
     'PR-SM': 'smp'
 }
 

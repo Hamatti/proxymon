@@ -4,9 +4,6 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 FILE="setcodes.txt"
 IN="$DIR/$FILE"
 
-echo "Installing"
-exit
-
 while read p;
 do
     pg=1;
