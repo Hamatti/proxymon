@@ -49,6 +49,8 @@ PTCGO_SETS =  {
     'SM1': 'sm1',
     'GRI': 'sm2',
     'SM2': 'sm2',
-    'PR-SM': 'smp'
+    'PR-SM': 'smp',
+    'SM3': 'sm3',
+    'BUS': 'sm3'
 }
 
