@@ -39,6 +39,7 @@ PTCGO_SETS =  {
     'BKT': 'xy8',
     'BKP': 'xy9',
     'FAC': 'xy10',
+    'FCO': 'xy10',
     'STS': 'xy11',
     'EVO': 'xy12',
     'DCR': 'dc1',
@@ -52,6 +53,8 @@ PTCGO_SETS =  {
     'PR-SM': 'smp',
     'SM3': 'sm3',
     'BUS': 'sm3',
-    'SLG': 'sm35'
+    'SLG': 'sm35',
+    'CIN': 'sm4',
+    'CRI': 'sm4',
 }
 
