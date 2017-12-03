@@ -88,3 +88,5 @@ sm1
 smp
 sm2
 sm3
+sm35
+sm4
